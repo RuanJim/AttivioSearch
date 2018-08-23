@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright file="CustomAddIn.cs" company="PerkinElmer Inc.">
+// <copyright file="AttivioSearchAddIn.cs" company="PerkinElmer Inc.">
 //   Copyright (c) 2013 PerkinElmer Inc.,
 //     940 Winter Street, Waltham, MA 02451.
 //     All rights reserved.
@@ -21,7 +21,7 @@ namespace Com.PerkinElmer.Service.AttivioSearch
 {
     /// <summary>
     /// </summary>
-    public sealed class CustomAddIn : AddIn
+    public sealed class AttivioSearchAddIn : AddIn
     {
         // Override methods in this class to register your extensions.
     }

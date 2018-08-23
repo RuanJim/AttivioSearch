@@ -14,6 +14,6 @@
     </assembly>
   </assemblies>
   <extensions>
-    <addIn fullTypeName="Com.PerkinElmer.Service.AttivioSearch.CustomAddIn, Com.PerkinElmer.Service.AttivioSearch, Version=1.0.0.0, Culture=neutral, PublicKeyToken=4d95002c27fab778" />
+    <addIn fullTypeName="Com.PerkinElmer.Service.AttivioSearch.AttivioSearchAddIn, Com.PerkinElmer.Service.AttivioSearch, Version=1.0.0.0, Culture=neutral, PublicKeyToken=4d95002c27fab778" />
   </extensions>
 </module>
