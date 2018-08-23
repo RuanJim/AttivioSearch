@@ -23,6 +23,11 @@ namespace Com.PerkinElmer.Service.AttivioSearch
     /// </summary>
     public sealed class AttivioSearchAddIn : AddIn
     {
-        // Override methods in this class to register your extensions.
+        protected override void RegisterVisuals(VisualRegistrar registrar)
+        {
+            base.RegisterVisuals(registrar);
+
+            registrar.Register(new AttivioSearchVisualFactory());
+        }
     }
 }
