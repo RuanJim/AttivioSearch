@@ -57,18 +57,6 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Spotfire.Dxp.Application">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\DxpProjects\Binaries\Spotfire.Dxp.Application.dll</HintPath>
-    </Reference>
-    <Reference Include="Spotfire.Dxp.Data">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\DxpProjects\Binaries\Spotfire.Dxp.Data.dll</HintPath>
-    </Reference>
-    <Reference Include="Spotfire.Dxp.Framework">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\DxpProjects\Binaries\Spotfire.Dxp.Framework.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
