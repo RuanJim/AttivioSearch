@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright file="CustomAddIn.cs" company="PerkinElmer Inc.">
+// <copyright file="AttivioSearchVisualsIdentifiers.cs" company="PerkinElmer Inc.">
 //   Copyright (c) 2013 PerkinElmer Inc.,
 //     940 Winter Street, Waltham, MA 02451.
 //     All rights reserved.
@@ -10,6 +10,7 @@
 //     that authorizes such use.
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
+
 #region
 
 using Spotfire.Dxp.Application.Extension;
@@ -19,14 +20,18 @@ using Spotfire.Dxp.Application.Extension;
 namespace Com.PerkinElmer.Service.AttivioSearch
 {
     /// <summary>
+    /// Type identifiers for the custom visuals in this add-in.
     /// </summary>
-    public sealed class CustomAddIn : AddIn
+    public sealed class AttivioSearchVisualsIdentifiers : CustomTypeIdentifiers
     {
-        protected override void RegisterVisuals(VisualRegistrar registrar)
-        {
-            base.RegisterVisuals(registrar);
+        #region Constants and Fields
 
-            registrar.Register(new AttivioSearchFactory());
-        }
+        /// <summary>
+        /// Type identifier for the custom donut chart.
+        /// </summary>
+        public static readonly CustomTypeIdentifier CustomDonutChart = CreateTypeIdentifier(
+            "SpotfireDeveloper.CustomDonutChart", "AttivioSearch", "");
+
+        #endregion
     }
 }
