@@ -59,5 +59,23 @@ namespace Com.PerkinElmer.Service.AttivioSearch.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Search tool for using Attivio in Spotfire..
+        /// </summary>
+        internal static string AttivioSearchDescription {
+            get {
+                return ResourceManager.GetString("AttivioSearchDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Attivio Search.
+        /// </summary>
+        internal static string AttivioSearchDisplayName {
+            get {
+                return ResourceManager.GetString("AttivioSearchDisplayName", resourceCulture);
+            }
+        }
     }
 }
