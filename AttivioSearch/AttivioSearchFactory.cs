@@ -35,7 +35,7 @@ namespace Com.PerkinElmer.Service.AttivioSearch
             : base(
                 AttivioSearchVisualsIdentifiers.CustomDonutChart, // Type identifier
                 VisualCategory.Visualization, // Visual category
-                Properties.Resources.Attivio, // Icon
+                null, // Icon
                 null)
         {
             // License

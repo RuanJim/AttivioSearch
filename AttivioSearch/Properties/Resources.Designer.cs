@@ -59,15 +59,5 @@ namespace Com.PerkinElmer.Service.AttivioSearch.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Attivio {
-            get {
-                object obj = ResourceManager.GetObject("Attivio", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
     }
 }

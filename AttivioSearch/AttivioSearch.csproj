@@ -60,17 +60,14 @@
     <Reference Include="Spotfire.Dxp.Application, Version=30.0.11202.4281, Culture=neutral, PublicKeyToken=789861576bd64dc5, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>lib\Spotfire.Dxp.Application.dll</HintPath>
-      <Private>False</Private>
     </Reference>
     <Reference Include="Spotfire.Dxp.Data, Version=30.0.11202.4281, Culture=neutral, PublicKeyToken=789861576bd64dc5, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>lib\Spotfire.Dxp.Data.dll</HintPath>
-      <Private>False</Private>
     </Reference>
     <Reference Include="Spotfire.Dxp.Framework, Version=30.0.11202.4281, Culture=neutral, PublicKeyToken=789861576bd64dc5, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>lib\Spotfire.Dxp.Framework.dll</HintPath>
-      <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -98,8 +95,6 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Attivio.png" />
-    <None Include="Resources\AttivioSearch.ico" />
     <None Include="SpotfireDeveloper.snk" />
     <Content Include="lib\Spotfire.Dxp.Application.dll" />
     <Content Include="lib\Spotfire.Dxp.Data.dll" />
@@ -108,7 +103,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
       <Visible>False</Visible>
