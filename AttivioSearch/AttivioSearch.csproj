@@ -80,6 +80,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AttivioSearchAddIn.cs" />
+    <Compile Include="AttivioSearchVisual.cs" />
     <Compile Include="AttivioSearchVisualIdentifiers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">

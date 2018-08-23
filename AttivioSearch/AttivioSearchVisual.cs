@@ -1,5 +1,5 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="AttivioSearchVisualIdentifiers.cs" company="PerkinElmer Inc.">
+// <copyright file="AttivioSearchVisual.cs" company="PerkinElmer Inc.">
 //   Copyright (c) 2013 PerkinElmer Inc.,
 //     940 Winter Street, Waltham, MA 02451.
 //     All rights reserved.
@@ -13,15 +13,21 @@
 
 #region
 
+using System.Runtime.Serialization;
 using Spotfire.Dxp.Application.Extension;
 
 #endregion
 
 namespace Com.PerkinElmer.Service.AttivioSearch
 {
-    public sealed class AttivioSearchVisualIdentifiers : CustomTypeIdentifiers
+    public sealed class AttivioSearchVisual : CustomVisual
     {
-        public static readonly CustomTypeIdentifier ConfiguredBarChart = CreateTypeIdentifier(
-            "Com.PerkinElmer.Service.AttivioSearch", Properties.Resources.AttivioSearchDisplayName, Properties.Resources.AttivioSearchDescription);
+        internal AttivioSearchVisual()
+        {
+        }
+
+        private AttivioSearchVisual(SerializationInfo info, StreamingContext context) : base(info, context)
+        {
+        }
     }
 }
