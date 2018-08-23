@@ -1,5 +1,5 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="AttivioSearchVisualIdentifiers.cs" company="PerkinElmer Inc.">
+// <copyright file="AttivioSearchVisualFactory.cs" company="PerkinElmer Inc.">
 //   Copyright (c) 2013 PerkinElmer Inc.,
 //     940 Winter Street, Waltham, MA 02451.
 //     All rights reserved.
@@ -19,9 +19,11 @@ using Spotfire.Dxp.Application.Extension;
 
 namespace Com.PerkinElmer.Service.AttivioSearch
 {
-    public sealed class AttivioSearchVisualIdentifiers : CustomTypeIdentifiers
+    internal sealed class AttivioSearchVisualFactory : CustomVisualFactory<AttivioSearchVisual>
     {
-        public static readonly CustomTypeIdentifier AttivioSearch = CreateTypeIdentifier(
-            "Com.PerkinElmer.Service.AttivioSearch", Properties.Resources.AttivioSearchDisplayName, Properties.Resources.AttivioSearchDescription);
+        internal AttivioSearchVisualFactory()
+            : base(AttivioSearchVisualIdentifiers.AttivioSearch, VisualCategory.Visualization, Properties.Resources.Attivio, null)
+        {
+        }
     }
 }

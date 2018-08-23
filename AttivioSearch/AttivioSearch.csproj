@@ -81,6 +81,7 @@
   <ItemGroup>
     <Compile Include="AttivioSearchAddIn.cs" />
     <Compile Include="AttivioSearchVisual.cs" />
+    <Compile Include="AttivioSearchVisualFactory.cs" />
     <Compile Include="AttivioSearchVisualIdentifiers.cs" />
     <Compile Include="AttivioSearchVisualView.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -98,6 +99,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Attivio.png" />
     <None Include="SpotfireDeveloper.snk" />
     <Content Include="lib\Spotfire.Dxp.Application.dll" />
     <Content Include="lib\Spotfire.Dxp.Data.dll" />
@@ -106,9 +108,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Resources\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
       <Visible>False</Visible>

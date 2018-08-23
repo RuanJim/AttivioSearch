@@ -61,6 +61,16 @@ namespace Com.PerkinElmer.Service.AttivioSearch.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Attivio {
+            get {
+                object obj = ResourceManager.GetObject("Attivio", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Search tool for using Attivio in Spotfire..
         /// </summary>
         internal static string AttivioSearchDescription {
