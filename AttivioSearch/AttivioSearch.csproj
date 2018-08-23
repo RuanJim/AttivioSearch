@@ -8,8 +8,8 @@
     <ProjectGuid>{9DCED72D-9B5B-4FAC-B1DB-B034D07BCF33}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AttivioSearch</RootNamespace>
-    <AssemblyName>AttivioSearch</AssemblyName>
+    <RootNamespace>Com.PerkinElmer.Service.AttivioSearch</RootNamespace>
+    <AssemblyName>Com.PerkinElmer.Service.AttivioSearch</AssemblyName>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>SpotfireDeveloper.snk</AssemblyOriginatorKeyFile>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
