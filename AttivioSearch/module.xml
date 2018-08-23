@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+  <id>5de546aa-061f-4e6c-a2f5-0f9c4c4cc66a</id>
+  <name>AttivioSearch</name>
+  <version>1.0</version>
+  <assemblies>
+    <assembly>
+      <fullname>AttivioSearch, Version=1.0.0.0, Culture=neutral, PublicKeyToken=4d95002c27fab778</fullname>
+      <codebase>AttivioSearch.dll</codebase>
+      <compatibility>
+        <min-version>0.0.0.0</min-version>
+        <max-version>#.#.*.*</max-version>
+      </compatibility>
+    </assembly>
+  </assemblies>
+  <extensions>
+    <addIn fullTypeName="AttivioSearch.CustomAddIn, AttivioSearch, Version=1.0.0.0, Culture=neutral, PublicKeyToken=4d95002c27fab778" />
+  </extensions>
+</module>
