@@ -29,5 +29,12 @@ namespace Com.PerkinElmer.Service.AttivioSearch
 
             registrar.Register(new AttivioSearchVisualFactory());
         }
+
+        protected override void RegisterViews(ViewRegistrar registrar)
+        {
+            base.RegisterViews(registrar);
+
+            registrar.Register(typeof(CustomVisualView), typeof(AttivioSearchVisual), typeof(AttivioSearchVisualView));
+        }
     }
 }

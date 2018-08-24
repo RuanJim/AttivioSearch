@@ -13,13 +13,18 @@
 
 #region
 
+using System;
 using System.Runtime.Serialization;
 using Spotfire.Dxp.Application.Extension;
+using Spotfire.Dxp.Framework.DocumentModel;
+using Spotfire.Dxp.Framework.Persistence;
 
 #endregion
 
 namespace Com.PerkinElmer.Service.AttivioSearch
 {
+    [Serializable]
+    [PersistenceVersion(2, 0)]
     public sealed class AttivioSearchVisual : CustomVisual
     {
         internal AttivioSearchVisual()
@@ -28,6 +33,16 @@ namespace Com.PerkinElmer.Service.AttivioSearch
 
         private AttivioSearchVisual(SerializationInfo info, StreamingContext context) : base(info, context)
         {
+        }
+
+        protected override void GetObjectData(SerializationInfo info, StreamingContext context)
+        {
+            base.GetObjectData(info, context);
+        }
+
+        protected override bool RenderUsingViewCore()
+        {
+            return true;
         }
     }
 }
