@@ -14,6 +14,7 @@
 #region
 
 using Spotfire.Dxp.Application.Extension;
+using Spotfire.Dxp.Framework.Preferences;
 
 #endregion
 
@@ -36,5 +37,21 @@ namespace Com.PerkinElmer.Service.AttivioSearch
 
             registrar.Register(typeof(CustomVisualView), typeof(AttivioSearchVisual), typeof(AttivioSearchVisualView));
         }
+
+        protected override void RegisterPreferences(PreferenceRegistrar registrar)
+        {
+            base.RegisterPreferences(registrar);
+
+            registrar.Register<AttivioSearchPreference>();
+        }
+
+        protected override void OnAnalysisServicesRegistered(ServiceProvider serviceProvider)
+        {
+            base.OnAnalysisServicesRegistered(serviceProvider);
+
+            AttivioServerUrl = serviceProvider.GetService<PreferenceManager>().GetPreference<AttivioSearchPreference>().AttivioServerUrl;
+        }
+
+        public static string AttivioServerUrl = string.Empty;
     }
 }

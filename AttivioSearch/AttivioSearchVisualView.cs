@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using Spotfire.Dxp.Application;
 using Spotfire.Dxp.Application.Extension;
 using Spotfire.Dxp.Data.Import;
+using Spotfire.Dxp.Framework.Preferences;
 
 namespace Com.PerkinElmer.Service.AttivioSearch
 {
@@ -27,7 +28,7 @@ namespace Com.PerkinElmer.Service.AttivioSearch
 
             dataFile = Path.GetTempFileName();
 
-            string html = Encoding.UTF8.GetString(bytes).Replace("##ATTIVIO_SEARCHUI##", "http://192.168.20.113:8080/searchui/");
+            string html = Encoding.UTF8.GetString(bytes).Replace("##ATTIVIO_SEARCHUI##", AttivioSearchAddIn.AttivioServerUrl);
 
             return new HttpContent(mimeType, html);
         }
