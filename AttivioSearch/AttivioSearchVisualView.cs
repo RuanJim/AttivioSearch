@@ -27,7 +27,7 @@ namespace Com.PerkinElmer.Service.AttivioSearch
 
             dataFile = Path.GetTempFileName();
 
-            string html = Encoding.UTF8.GetString(bytes).Replace("##ATTIVIO_SEARCHUI##", snapshotNode.AttivioServerUrl);
+            string html = Encoding.UTF8.GetString(bytes).Replace("##ATTIVIO_SEARCHUI##", "http://192.168.20.113:8080/searchui/");
 
             return new HttpContent(mimeType, html);
         }
