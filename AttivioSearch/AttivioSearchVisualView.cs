@@ -13,8 +13,8 @@ namespace Com.PerkinElmer.Service.AttivioSearch
 {
     public sealed class AttivioSearchVisualView : CustomVisualView<AttivioSearchVisual>
     {
-        private static readonly string DataFile = @"C:\attiviotmp\attivio.csv";
-        private static List<string[]> data = new List<string[]>();
+        private string dataFile;
+        private List<string[]> data = new List<string[]>();
 
         public AttivioSearchVisualView(AttivioSearchVisual model) : base(model)
         {
@@ -25,7 +25,11 @@ namespace Com.PerkinElmer.Service.AttivioSearch
             var bytes = GetEmbeddedResource("Com.PerkinElmer.Service.AttivioSearch.web.Attivio.html");
             var mimeType = ResolveContentType("Com.PerkinElmer.Service.AttivioSearch.web.Attivio.html");
 
-            return new HttpContent(mimeType, bytes);
+            dataFile = Path.GetTempFileName();
+
+            string html = Encoding.UTF8.GetString(bytes).Replace("##ATTIVIO_SEARCHUI##", "http://192.168.20.113:8080/searchui/");
+
+            return new HttpContent(mimeType, html);
         }
 
         protected override void ModifyCore(string method, string args, AttivioSearchVisual liveNode)
@@ -44,7 +48,7 @@ namespace Com.PerkinElmer.Service.AttivioSearch
                 }
             }
 
-            StreamWriter writer = new StreamWriter(File.Open(DataFile, FileMode.Create), Encoding.UTF8);
+            StreamWriter writer = new StreamWriter(File.Open(dataFile, FileMode.Create), Encoding.UTF8);
 
             for (var i = 0; i < max; i++)
             {
@@ -68,7 +72,7 @@ namespace Com.PerkinElmer.Service.AttivioSearch
 
             writer.Close();
 
-            TextFileDataSource dataSource = new TextFileDataSource(File.OpenRead(DataFile));
+            TextFileDataSource dataSource = new TextFileDataSource(File.OpenRead(dataFile));
 
             var document = liveNode.Visual.Context.GetService<Document>();
 
