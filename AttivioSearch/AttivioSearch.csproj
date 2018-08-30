@@ -58,19 +58,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Spotfire.Dxp.Application">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\DxpProjects\Binaries\Spotfire.Dxp.Application.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\..\..\Softwares\Spotfire 7.9\TIB_sfire_dev_7.9.0_win\SDK\Binaries\Spotfire.Dxp.Application.dll</HintPath>
     </Reference>
     <Reference Include="Spotfire.Dxp.Data">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\DxpProjects\Binaries\Spotfire.Dxp.Data.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\..\..\Softwares\Spotfire 7.9\TIB_sfire_dev_7.9.0_win\SDK\Binaries\Spotfire.Dxp.Data.dll</HintPath>
     </Reference>
     <Reference Include="Spotfire.Dxp.Framework">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\DxpProjects\Binaries\Spotfire.Dxp.Framework.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\..\..\Softwares\Spotfire 7.9\TIB_sfire_dev_7.9.0_win\SDK\Binaries\Spotfire.Dxp.Framework.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -105,9 +99,6 @@
     <None Include="AttivioSearch.pkdesc" />
     <None Include="Resources\Attivio.png" />
     <None Include="SpotfireDeveloper.snk" />
-    <Content Include="lib\Spotfire.Dxp.Application.dll" />
-    <Content Include="lib\Spotfire.Dxp.Data.dll" />
-    <Content Include="lib\Spotfire.Dxp.Framework.dll" />
     <Content Include="module.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
