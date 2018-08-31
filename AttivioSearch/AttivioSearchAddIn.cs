@@ -50,8 +50,10 @@ namespace Com.PerkinElmer.Service.AttivioSearch
             base.OnAnalysisServicesRegistered(serviceProvider);
 
             AttivioServerUrl = serviceProvider.GetService<PreferenceManager>().GetPreference<AttivioSearchPreference>().AttivioServerUrl;
+            DataFile = System.IO.Path.GetTempFileName();
         }
 
         public static string AttivioServerUrl = string.Empty;
+        public static string DataFile = string.Empty;
     }
 }

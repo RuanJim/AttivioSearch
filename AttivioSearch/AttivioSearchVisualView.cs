@@ -14,7 +14,6 @@ namespace Com.PerkinElmer.Service.AttivioSearch
 {
     public sealed class AttivioSearchVisualView : CustomVisualView<AttivioSearchVisual>
     {
-        private string dataFile;
         private List<string[]> data = new List<string[]>();
 
         public AttivioSearchVisualView(AttivioSearchVisual model) : base(model)
@@ -25,8 +24,6 @@ namespace Com.PerkinElmer.Service.AttivioSearch
         {
             var bytes = GetEmbeddedResource("Com.PerkinElmer.Service.AttivioSearch.web.Attivio.html");
             var mimeType = ResolveContentType("Com.PerkinElmer.Service.AttivioSearch.web.Attivio.html");
-
-            dataFile = Path.GetTempFileName();
 
             string html = Encoding.UTF8.GetString(bytes).Replace("##ATTIVIO_SEARCHUI##", AttivioSearchAddIn.AttivioServerUrl);
 
@@ -49,7 +46,7 @@ namespace Com.PerkinElmer.Service.AttivioSearch
                 }
             }
 
-            StreamWriter writer = new StreamWriter(File.Open(dataFile, FileMode.Create), Encoding.UTF8);
+            StreamWriter writer = new StreamWriter(File.Open(AttivioSearchAddIn.DataFile, FileMode.Create), Encoding.UTF8);
 
             for (var i = 0; i < max; i++)
             {
@@ -73,7 +70,7 @@ namespace Com.PerkinElmer.Service.AttivioSearch
 
             writer.Close();
 
-            TextFileDataSource dataSource = new TextFileDataSource(File.OpenRead(dataFile));
+            TextFileDataSource dataSource = new TextFileDataSource(File.OpenRead(AttivioSearchAddIn.DataFile));
 
             var document = liveNode.Visual.Context.GetService<Document>();
 
