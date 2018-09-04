@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0"?>
-<PackageDescription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" SchemaVersion="1.0" Name="AttivioSearch" Version="1.0.0.1" SeriesId="9EA9B19E-1AF8-4DE2-B443-9A8B6793E4FA" IntendedClient="Core">
+<PackageDescription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" SchemaVersion="1.0" Name="AttivioSearch" Version="1.0.0.2" SeriesId="9EA9B19E-1AF8-4DE2-B443-9A8B6793E4FA" IntendedClient="Core">
   <File SourceFile="Com.PerkinElmer.Service.AttivioSearch.dll" TargetFilename="Com.PerkinElmer.Service.AttivioSearch.dll" Type="Assembly">
     <Compatibility Min-version="0.0.0.0" Max-version="#.#.*.*" />
   </File>

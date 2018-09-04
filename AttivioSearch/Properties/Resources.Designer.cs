@@ -71,7 +71,7 @@ namespace Com.PerkinElmer.Service.AttivioSearch.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Search tool for using Attivio in Spotfire..
+        ///   Looks up a localized string similar to Search tool for Spotfire..
         /// </summary>
         internal static string AttivioSearchDescription {
             get {
@@ -80,7 +80,7 @@ namespace Com.PerkinElmer.Service.AttivioSearch.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Attivio Search.
+        ///   Looks up a localized string similar to Cognitive  Search.
         /// </summary>
         internal static string AttivioSearchDisplayName {
             get {
