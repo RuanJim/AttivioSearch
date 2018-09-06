@@ -5,7 +5,7 @@
   <version>1.0</version>
   <assemblies>
     <assembly>
-      <fullname>Com.PerkinElmer.Service.AttivioSearch, Version=1.0.0.2, Culture=neutral, PublicKeyToken=4d95002c27fab778</fullname>
+      <fullname>Com.PerkinElmer.Service.AttivioSearch, Version=1.0.0.3, Culture=neutral, PublicKeyToken=4d95002c27fab778</fullname>
       <codebase>Com.PerkinElmer.Service.AttivioSearch.dll</codebase>
       <compatibility>
         <min-version>0.0.0.0</min-version>
@@ -14,6 +14,6 @@
     </assembly>
   </assemblies>
   <extensions>
-    <addIn fullTypeName="Com.PerkinElmer.Service.AttivioSearch.AttivioSearchAddIn, Com.PerkinElmer.Service.AttivioSearch, Version=1.0.0.2, Culture=neutral, PublicKeyToken=4d95002c27fab778" />
+    <addIn fullTypeName="Com.PerkinElmer.Service.AttivioSearch.AttivioSearchAddIn, Com.PerkinElmer.Service.AttivioSearch, Version=1.0.0.3, Culture=neutral, PublicKeyToken=4d95002c27fab778" />
   </extensions>
 </module>
