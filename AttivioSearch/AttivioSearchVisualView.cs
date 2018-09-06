@@ -74,7 +74,14 @@ namespace Com.PerkinElmer.Service.AttivioSearch
 
             var document = liveNode.Visual.Context.GetService<Document>();
 
-            document.ActiveDataTableReference.ReplaceData(dataSource);
+            if (document.Data.Tables.Contains("CognitiveSearch"))
+            {
+                document.Data.Tables["CognitiveSearch"].ReplaceData(dataSource);
+            }
+            else
+            {
+                document.Data.Tables.Add("CognitiveSearch", dataSource);
+            }
         }
 
         protected override void OnUpdateRequiredCore()
