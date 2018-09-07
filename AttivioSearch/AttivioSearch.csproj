@@ -97,6 +97,7 @@
     <EmbeddedResource Include="web\Attivio.html" />
     <None Include="AttivioSearch.bat" />
     <None Include="AttivioSearch.pkdesc" />
+    <None Include="CognitiveSearch User Manual.docx" />
     <None Include="Resources\Attivio.png" />
     <None Include="SpotfireDeveloper.snk" />
     <Content Include="module.xml">
